@@ -60,4 +60,4 @@ Examples
 
 This simple scheme may be at first difficult to understand, how to use it in
 practice and solve many versioning problems, therefore please check
-(cookbook)[cookbook.rst] to grasp more about it.
+`cookbook <cookbook.rst>`_ to grasp more about it.
