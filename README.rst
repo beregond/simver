@@ -18,11 +18,12 @@ The key words "must", "must not", "required", "shall", "shall not", "should",
 interpreted as described in `RFC 2119 <http://tools.ietf.org/html/rfc2119>`_.
 
 * **Chunks** - parts of version number (without suffix) separated by dot. In
-  version 1.2.0.453-chuck-testa chuncks are 1, 2, 0 and 453.
+  version ``1.2.0.453-chuck-testa`` chuncks are ``1``, ``2``, ``0`` and
+  ``453``.
 
 * **Series** - releases corelated by first non-zero chunk in version number
-  (releases with versions 0.1, 0.1.1, 1, 1.2, 1.3-dev are all released under
-  series 1)
+  (releases with versions ``0.1``, ``0.1.1``, ``1``, ``1.2``, ``1.3-dev`` are
+  all released under series ``1``)
 
 * **Unstable version** - release where version number points to revision, which
   work is found to be unstable, or its interfaces (like api) may change in the
