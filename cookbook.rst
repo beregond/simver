@@ -1,20 +1,41 @@
-Examples
+Cookbook
 ========
 
-Examples below are just suggestions, on how can you organize your workflow.
-Remember that you can always adapt this scheme and examples to fit best to your
+Recipes below are just suggestions, on how you can organize your workflow.
+Remember that you can always adapt this scheme and recipes to fit best to your
 current needs.
 
-Basic case
-----------
+Note
+----
+
+* Please remember, that this numbering scheme doesn't allow magic strings like
+  ``alpha``, ``beta`` or ``rc`` in version number. If you think you really need
+  them, you should probably use SemVer or different scheme. If you think you
+  can replace it by using proper branch suffixes - well, that is possible, but
+  for sake of `Automated updates`_ is not recommended.
+
+* Remember, that even if development is usually distributed, assigment of new
+  version numbers must be centralized. If given branch was assigned to one
+  developer, there is no problem, but if whole group is releasing product in
+  gien branch, there must be one person responsible for give of new number.
+  Otherwise there may occur problem, when two persons would give the same number
+  to different revisions.
+
+* If you are releasing only stable (and optionally unstable), and you don't 
+  release any development versions (or team with assigned task doesn't release
+  any dev version to public), then probably you won't even have any need for 
+  version branches.
+
+Basic usage
+-----------
 
 First usable version should be ``0.1``, and later releases (not yes stable)
 like ``0.1.1``, ``0.1.2`` and so on (or if there is a need ``0.1.1.3`` etc.).
 When there is a moment, that you want to release alpha, beta and rc candidate,
 just don't add any unnecessary suffixes like 'alpha' or 'beta', just release
 next versions like ``0.1.5``, or ``0.1.5.1`` if these are next rc releases (for
-knowing why there are no suffixes like 'alpha', 'beta' and so on see 'Automated
-updates' example).
+knowing why there are no suffixes like 'alpha', 'beta' and so on see `Automated
+updates`_).
 
 When you have release candidate, that is accepted, with, for example version
 number like ``0.1.5.3`` just release version ``1`` which points to the same
@@ -47,6 +68,25 @@ use it yet. From here on, the rest of the process is the same: release first
 stable version from series ``2``, releasing dev versions like
 ``2.0.3-something``, releasing next stable versions and at last releasing first
 version under next series.
+
+Advanced usage
+--------------
+
+This recipe extends `Basic usage`_
+
+When you have many developers, and all of them need to release development
+and/or unstable versions everything you need to do is to use more branches.
+
+For example when you have three developers, you must assign to them branch
+names, under which they will release their versions, these may be like
+``dev1``, ``dev2`` and ``dev3``. For convenience you can always assign them
+branches like ``dev-steve`` to know who owns that branch, and make them work on
+CVS branches (like in Git) with the same name.
+
+When you have version ``0.4.3`` and each of developers will start work on new
+features then versions they would release will be like ``0.4.3.1-dev1``,
+``0.4.3.1-dev2``, ``0.4.3.1-dev3``. You can later merge those features and
+release as new version.
 
 Automated updates
 -----------------

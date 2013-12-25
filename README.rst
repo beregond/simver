@@ -40,8 +40,8 @@ interpreted as described in `RFC 2119 <http://tools.ietf.org/html/rfc2119>`_.
   must keep backward compatibility with series under which it was released, but
   may contain bugs or even not intended backward compatibility breaks.
 
-Specification
--------------
+Simple Versioning Specification
+-------------------------------
 
 * Every version number must take form of
   ``^(0\.)?[1-9][0-9]*((\.[0-9]*)*\.[1-9][0-9]*)?(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.
