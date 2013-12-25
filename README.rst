@@ -1,4 +1,4 @@
-Versioning
+Simple Versioning
 ==========
 
 Introduction
@@ -44,20 +44,20 @@ Specification
 -------------
 
 * Every version number must take form of
-  ``^(0.)?[1-9][0-9]*((.[0-9]*)*.[1-9][0-9]*)?(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.
-  (What gives you proper version numbers like 0.1, 2, 3, 3.1, 2.0.1-dev and wrong
-  like 0.0.1, 2.0 or 2.0.0, 2.1-2 etc.)
+  ``^(0\.)?[1-9][0-9]*((\.[0-9]*)*\.[1-9][0-9]*)?(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.
+  (What gives you proper version numbers like ``0.1``, ``2``, ``3``, ``3.1``,
+  ``2.0.1-dev`` and wrong like ``0.0.1``, ``2.0`` or ``2.0.0``, ``2.1-2``)
 
 * Every unstable version must have number that starts with ``0.X`` where ``X``
   is number of series, under which later stable versions will be released.
 
 * Each chunk of version number must be consider as integer and must increase
   numerically (with exception for alphanumerical suffix, which, obviously, can't).
-  For example: 1.9 -> 1.10 -> 1.11.
+  For example: ``1.9`` -> ``1.10`` -> ``1.11``.
 
 Examples
 --------
 
 This simple scheme may be at first difficult to understand, how to use it in
-practice and solve many versioning problems, therefore please check cookbook to
-grasp more about it.
+practice and solve many versioning problems, therefore please check
+(cookbook)[cookbook.rst] to grasp more about it.

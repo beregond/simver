@@ -40,9 +40,9 @@ do it and release version ``1.1``. Remember that you can of course merge it
 later, into release like ``1.4`` or further.
 
 What is very important, first release that breaks backward compatibility must
-be released under differnet series. If it is unstable release (since you want
-to have some time for development next series) should have number ``0.2``. Now
-you and every user know it is unstable release for next series and he shouldn't
+be released under different series. If it is unstable release (since you want
+to have some time for development) it should have number ``0.2``. Now you and
+every user know it is unstable release for next series and that he shouldn't
 use it yet. From here on, the rest of the process is the same: release first
 stable version from series ``2``, releasing dev versions like
 ``2.0.3-something``, releasing next stable versions and at last releasing first
