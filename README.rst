@@ -59,5 +59,5 @@ Examples
 --------
 
 This simple scheme may be at first difficult to understand, how to use it in
-practice and solve many versioning problems, therefore please check examples
-document to grasp more about it.
+practice and solve many versioning problems, therefore please check cookbook to
+grasp more about it.
