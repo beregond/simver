@@ -62,3 +62,9 @@ Examples
 This simple scheme may be at first difficult to understand, how to use it in
 practice and solve many versioning problems, therefore please check
 `cookbook <cookbook.rst>`_ to grasp more about it.
+
+Feedback
+--------
+
+If you want to leave some feedback, please `open an issue on GitHub
+<https://github.com/beregond/simver/issues>`_
