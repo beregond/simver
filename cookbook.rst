@@ -29,7 +29,7 @@ Note
 Basic usage
 -----------
 
-First usable version should be ``0.1``, and later releases (not yes stable)
+First usable version should be ``0.1``, and later releases (not yet stable)
 like ``0.1.1``, ``0.1.2`` and so on (or if there is a need ``0.1.1.3`` etc.).
 When there is a moment, that you want to release alpha, beta and rc candidate,
 just don't add any unnecessary suffixes like 'alpha' or 'beta', just release
@@ -44,7 +44,7 @@ revision.
 After that, anytime you release new version you need just add ``1`` to second
 chunk, so you can release versions ``1.1``, ``1.2``, ``1.3`` and so on. For
 smaller fixes you can increment third chunk (SemVer strategy on major, minor
-and patch would fit here very good).
+and patch would fit here very well).
 
 Assume that current version is ``1``. Time comes when you need to release
 version to public, but it's development version and you don't want anybody to
