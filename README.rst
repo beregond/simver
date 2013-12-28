@@ -18,8 +18,7 @@ The key words "must", "must not", "required", "shall", "shall not", "should",
 interpreted as described in `RFC 2119 <http://tools.ietf.org/html/rfc2119>`_.
 
 * **Chunks** - parts of version number (without suffix) separated by dot. In
-  version ``1.2.0.453-chuck-testa`` chuncks are ``1``, ``2``, ``0`` and
-  ``453``.
+  version ``1.2.0.453-chuck-testa`` chunks are ``1``, ``2``, ``0`` and ``453``.
 
 * **Series** - releases corelated by first non-zero chunk in version number
   (releases with versions ``0.1``, ``0.1.1``, ``1``, ``1.2``, ``1.3-dev`` are
@@ -28,7 +27,7 @@ interpreted as described in `RFC 2119 <http://tools.ietf.org/html/rfc2119>`_.
 * **Unstable version** - release where version number points to revision, which
   work is found to be unstable, or its interfaces (like api) may change in the
   future. Unstable release is release that must not be used in production
-  environment and its interfaces must not be base to build other components.
+  environments and its interfaces must not be a base to build other components.
 
 * **Stable version** - release where version number points to revision, which
   work is found to be stable (and preferably tested). If it is another stable
@@ -37,31 +36,34 @@ interpreted as described in `RFC 2119 <http://tools.ietf.org/html/rfc2119>`_.
 
 * **Development version** - release where version number points to revision,
   which was developed after releasing first stable version, and has additional
-  features or fixes, but is not yet fully tested, or is released for review. It
-  must keep backward compatibility with series under which it was released, but
-  may contain bugs or even not intended backward compatibility breaks.
+  features or fixes, but is not yet fully tested or stable or is released for
+  review. It must keep backward compatibility with series under which it was
+  released, but may contain bugs or even, not intended, backward compatibility
+  breaks. Development release is release that must not be used in production
+  envrionments and its interfaces must not be a base to build other components.
 
 Simple Versioning Specification
 -------------------------------
 
 * Every version number must take form of
   ``^(0\.)?[1-9][0-9]*((\.[0-9]*)*\.[1-9][0-9]*)?(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.
-  (What gives you proper version numbers like ``0.1``, ``2``, ``3``, ``3.1``,
-  ``2.0.1-dev`` and wrong like ``0.0.1``, ``2.0`` or ``2.0.0``, ``2.1-2``)
+  (What gives you **proper** version numbers like ``0.1``, ``2``, ``3``,
+  ``3.1``, ``2.0.1-dev`` and **wrong** like ``0.0.1``, ``2.0`` or ``2.0.0``,
+  ``2.1-2``)
 
 * Every unstable version must have number that starts with ``0.X`` where ``X``
   is number of series, under which later stable versions will be released.
 
-* Each chunk of version number must be consider as integer and must increase
-  numerically (with exception for alphanumerical suffix, which, obviously, can't).
-  For example: ``1.9`` -> ``1.10`` -> ``1.11``.
+* Each chunk of version number must be considered as integer and must increase
+  numerically (with exception for alphanumerical suffix, which, obviously,
+  can't). For example: ``1.9`` -> ``1.10`` -> ``1.11``.
 
 Examples
 --------
 
 This simple scheme may be at first difficult to understand, how to use it in
 practice and solve many versioning problems, therefore please check
-`cookbook <cookbook.rst>`_ to grasp more about it.
+`cookbook <cookbook.rst>`_ to grasp more info about it.
 
 Feedback
 --------
