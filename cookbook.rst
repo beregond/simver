@@ -26,6 +26,10 @@ Note
   any dev versions to public), then probably you won't even have any need for
   version branches.
 
+* Trailing zero chunks (like here ``2.0.0``) are meaningless, so ``2.0.0 == 2
+  == 2.0``.  Everytime I write something like "release version ``1``" you can
+  also release it as ``1.0`` or ``1.0.0``.
+
 Basic usage
 -----------
 

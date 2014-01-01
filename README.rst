@@ -46,9 +46,9 @@ Simple Versioning Specification
 -------------------------------
 
 * Every version number must take form of
-  ``^(0\.)?[1-9][0-9]*((\.[0-9]*)*\.[1-9][0-9]*)?(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.
-  (What gives you **proper** version numbers like ``0.1``, ``2``, ``3``,
-  ``3.1``, ``2.0.1-dev`` and **wrong** like ``0.0.1``, ``2.0`` or ``2.0.0``,
+  ``^(0\.)?[1-9][0-9]*(\.[0-9]+)*(-[a-zA-Z][a-zA-Z-_0-9]*)?$``.  (What gives
+  you **proper** version numbers like ``0.1``, ``2.0``, ``3``, ``3.1``,
+  ``2.0.1-dev`` and **wrong** like ``0.0.1``, ``2.0alpha`` or ``2.0.0RC1``,
   ``2.1-2``)
 
 * Every unstable version must have number that starts with ``0.X`` where ``X``
