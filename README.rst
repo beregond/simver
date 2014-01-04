@@ -70,3 +70,14 @@ Feedback
 
 If you want to leave some feedback, please `open an issue on GitHub
 <https://github.com/beregond/simver/issues>`_
+
+License
+-------
+
+No license - no problem.
+
+Thanks
+------
+
+To all my friends, which drank with me hectolitres of beer while
+discussing about different version number schemes - thanks :).
